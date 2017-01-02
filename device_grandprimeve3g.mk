@@ -61,6 +61,9 @@ PRODUCT_PACKAGES += \
 
 # HWC
 PRODUCT_PACKAGES += \
+	hwcomposer.sc8830 \
+	sprd_gsp.sc8830 \
+	libmemoryheapion_sprd \
 	libion_sprd
 
 # Codecs
@@ -101,9 +104,7 @@ PRODUCT_PACKAGES += \
 	libstlport \
 	librilutils \
 	libril_shim \
-	libgps_shim \
-	libhwc_shim \
-	libstagefright_shim
+	libgps_shim
 
 # GPS
 GPS_CONFIGS := \
@@ -115,6 +116,10 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
 	macloader
+
+# PowerHAL
+PRODUCT_PACKAGES += \
+	power.sc8830
 
 WIFI_CONFIGS := \
 	$(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf \
